@@ -1,0 +1,35 @@
+#This is the code book for the project
+
+First, download data from the link provided and unzip it into working directory of R Studio.
+Then, Execute the R script.
+
+The source data are from the Human Activity Recognition Using Smartphones Data Set. 
+The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
+Details can be acessed from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones Here are the data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+About R script
+File with R code "run_analysis.R" performs the steps in the course website:
+
+Reading in the files and merging the training and the test sets to create one data set.
+I. Read files
+a. Read the trainings tables
+b. Then testing tables
+c. Then feature vector
+d. Next activity labels
+II Assigning names to variables
+III Merging all data into one dataset
+TV. Extracting only the measurements on the mean and SD
+V. Reading variable names
+VI. Create vector for defining ID, mean and SD
+VII. Making nessesary subset from merged data set
+VIII. Name the activities in the data set with descriptive activity
+IX. Appropriately labeling the data set with descriptive variable names
+X. Creating another data set with the average of each variable for each activity and each subject
+XII. Making second tidy dataset
+XIII. Writing second tidy data et in txt file
+XIV. The code assumes all the data is present in the same folder, un-compressed and without names altered.
+
+Information regarding the variables listed below:
+x_train, y_train, x_test, y_test, subject_train and subject_test, features, activityLabels contain the data from the downloaded files.
+x_data, y_data and subject_data merge the previous datasets to further analysis.
+features - names for the x_data dataset to be applied to the column names stored in
