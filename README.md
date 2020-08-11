@@ -1,8 +1,12 @@
 # Tidyset-week4
 
-First, download and unzip the data file into your R working directory.
-Second, download the R source code into your R working directory.
-Finally, execute R source code to generate tidy data file.
+This project includes 4 different files: 
+README.md, codebook.md, run_analysis.R, tidy_data.txt
+
+I. download and unzip the data file into R working directory.
+II. download the R source code into your R working directory.
+III, execute R source code to generate tidy data file.
+
 Data description
 The variables in the data X are sensor signals measured with waist-mounted smartphone from 30 subjects. The variable in the data Y indicates activity type the subjects performed during recording.
 
