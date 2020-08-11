@@ -1,26 +1,32 @@
 # Tidyset-week4
 
-This project includes 4 different files: 
+4 different files: 
 README.md, codebook.md, run_analysis.R, tidy_data.txt
 
 I. download and unzip the data file into R working directory.
 II. download the R source code into your R working directory.
-III, execute R source code to generate tidy data file.
+III. execute R source code to generate tidy data file.
 
 Data description
-The variables in the data X are sensor signals measured with waist-mounted smartphone from 30 subjects. The variable in the data Y indicates activity type the subjects performed during recording.
+full: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Code explaination
-The code combined training dataset and test dataset, and extracted partial variables to create another dataset with the averages of each variable for each activity.
+The code grouped together the training dataset and test dataset, and extracted partial variables to create another dataset with the averages of each variable for each activity.
 
 New dataset
-The new generated dataset contained variables calculated based on the mean and standard deviation. Each row of the dataset is an average of each activity type for all subjects.
+It contained variables calculated based on the mean and SD. Each row is the mean of each activity type for all subjects.
 
-The code was written based on the instruction of this assignment
-Read training and test dataset into R environment. Read variable names into R envrionment. Read subject index into R environment.
-
-Merges the training and the test sets to create one data set. Use command rbind to combine training and test set
-Extracts only the measurements on the mean and standard deviation for each measurement. Use grep command to get column indexes for variable name contains "mean()" or "std()"
-Uses descriptive activity names to name the activities in the data set Convert activity labels to characters and add a new column as factor
-Appropriately labels the data set with descriptive variable names. Give the selected descriptive names to variable columns
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. Use pipeline command to create a new tidy dataset with command group_by and summarize_each in dplyr package
+Following steps involved to create datasets.
+I. Read files
+II Assigning names to variables
+III Merging all data into one dataset
+IV. Extracting only the measurements on the mean and SD
+V. Reading variable names
+VI. Create vector for defining ID, mean and SD
+VII. Making nessesary subset from merged data set
+VIII. Name the activities in the data set with descriptive activity
+IX. Appropriately labeling the data set with descriptive variable names
+X. Creating another data set with the average of each variable for each activity and each subject
+XII. Making second tidy dataset
+XIII. Writing second tidy data et in txt file
+XIV. The code assumes all the data is present in the same folder, un-compressed and without names altered.
